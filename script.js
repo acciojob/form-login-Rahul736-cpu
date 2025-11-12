@@ -1,14 +1,9 @@
 function getFormvalue(event) {
-	
-    //Write your code here
+    event.preventDefault(); // stops form from submitting / page reload
 
-	event.preventDefault();
+    const firstName = document.forms["form1"]["fname"].value;
+    const lastName = document.forms["form1"]["lname"].value;
 
-	const firstName=document.forms["form1"]["fname"].value;
-	const lastname=document.forms["form2"]["lname"].value;
-
-	alert(firstName+" "+lastname);
-	
-
-
+    alert(firstName + " " + lastName);
 }
+
